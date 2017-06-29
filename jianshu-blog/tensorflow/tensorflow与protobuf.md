@@ -1,0 +1,280 @@
+在tensorflow里到处可以看到protobuf的身影.
+
+https://github.com/tensorflow/tensorflow/tree/master/tensorflow/core/protobuf
+
+这个目录下有不少proto的定义文件
+
+1.  config.proto
+2. master.proto
+3. master_service.proto
+4. meta_graph.proto
+5. named_tensor.proto
+6. queue_runner.proto
+7. saver.proto
+8. tensorflow_server.proto
+9. worker.proto
+10. worker_service.proto
+
+---
+
+
+## config.proto
+
+```proto
+syntax = "proto3";
+
+package tensorflow;
+// option cc_enable_arenas = true;
+option java_outer_classname = "ConfigProtos";
+option java_multiple_files = true;
+option java_package = "org.tensorflow.framework";
+
+import "tensorflow/core/framework/cost_graph.proto";
+import "tensorflow/core/framework/step_stats.proto";
+
+message GPUOptions {
+  // A value between 0 and 1 that indicates what fraction of the
+  // available GPU memory to pre-allocate for each process.  1 means
+  // to pre-allocate all of the GPU memory, 0.5 means the process
+  // allocates ~50% of the available GPU memory.
+  double per_process_gpu_memory_fraction = 1;
+
+  // The type of GPU allocation strategy to use.
+  //
+  // Allowed values:
+  // "": The empty string (default) uses a system-chosen default
+  //     which may change over time.
+  //
+  // "BFC": A "Best-fit with coalescing" algorithm, simplified from a
+  //        version of dlmalloc.
+  string allocator_type = 2;
+
+  // Delay deletion of up to this many bytes to reduce the number of
+  // interactions with gpu driver code.  If 0, the system chooses
+  // a reasonable default (several MBs).
+  int64 deferred_deletion_bytes = 3;
+
+  // If true, the allocator does not pre-allocate the entire specified
+  // GPU memory region, instead starting small and growing as needed.
+  bool allow_growth = 4;
+};
+
+// Options passed to the graph optimizer
+message OptimizerOptions {
+  // If true, optimize the graph using common subexpression elimination.
+  bool do_common_subexpression_elimination = 1;
+
+  // If true, perform constant folding optimization on the graph.
+  bool do_constant_folding = 2;
+
+  // If true, perform function inlining on the graph.
+  bool do_function_inlining = 4;
+
+  // Optimization level
+  enum Level {
+    // L1 is the default level.
+    // Optimization performed at L1 :
+    // 1. Common subexpression elimination
+    // 2. Constant folding
+    L1 = 0;
+
+    // No optimizations
+    L0 = -1;
+  }
+
+  Level opt_level = 3;
+}
+
+message GraphOptions {
+  // Removed, use optimizer_options below.
+  reserved "skip_common_subexpression_elimination";
+  reserved 1;
+
+  // If true, use control flow to schedule the activation of Recv nodes.
+  // (Currently ignored.)
+  bool enable_recv_scheduling = 2;
+
+  // Options controlling how graph is optimized.
+  OptimizerOptions optimizer_options = 3;
+
+  // The number of steps to run before returning a cost model detailing
+  // the memory usage and performance of each node of the graph. 0 means
+  // no cost model.
+  int64 build_cost_model = 4;
+
+  // Annotate each Node with Op output shape data, to the extent it can
+  // be statically inferred.
+  bool infer_shapes = 5;
+
+  // Only place the subgraphs that are run, rather than the entire graph.
+  //
+  // This is useful for interactive graph building, where one might
+  // produce graphs that cannot be placed during the debugging
+  // process.  In particular, it allows the client to continue work in
+  // a session after adding a node to a graph whose placement
+  // constraints are unsatisfiable.
+  bool place_pruned_graph = 6;
+};
+
+message ThreadPoolOptionProto {
+  // The number of threads in the pool.
+  //
+  // 0 means the system picks a value based on where this option proto is used
+  // (see the declaration of the specific field for more info).
+  int32 num_threads = 1;
+};
+
+// Session configuration parameters.
+// The system picks an appropriate values for fields that are not set.
+message ConfigProto {
+  // Map from device type name (e.g., "CPU" or "GPU" ) to maximum
+  // number of devices of that type to use.  If a particular device
+  // type is not found in the map, the system picks an appropriate
+  // number.
+  map<string, int32> device_count = 1;
+
+  // The execution of an individual op (for some op types) can be
+  // parallelized on a pool of intra_op_parallelism_threads.
+  // 0 means the system picks an appropriate number.
+  int32 intra_op_parallelism_threads = 2;
+
+  // Nodes that perform blocking operations are enqueued on a pool of
+  // inter_op_parallelism_threads available in each process.
+  //
+  // 0 means the system picks an appropriate number.
+  //
+  // Note that the first Session created in the process sets the
+  // number of threads for all future sessions unless use_per_session_threads is
+  // true or session_inter_op_thread_pool is configured.
+  int32 inter_op_parallelism_threads = 5;
+
+  // If true, use a new set of threads for this session rather than the global
+  // pool of threads. Only supported by direct sessions.
+  //
+  // If false, use the global threads created by the first session, or the
+  // per-session thread pools configured by session_inter_op_thread_pool.
+  //
+  // This option is deprecated. The same effect can be achieved by setting
+  // session_inter_op_thread_pool to have one element, whose num_threads equals
+  // inter_op_parallelism_threads.
+  bool use_per_session_threads = 9;
+
+  // Configures session thread pools. If this is configured, then RunOptions for
+  // a Run call can select the thread pool to use.
+  //
+  // If a pool's num_threads is 0, then inter_op_parallelism_threads is used.
+  repeated ThreadPoolOptionProto session_inter_op_thread_pool = 12;
+
+  // Assignment of Nodes to Devices is recomputed every placement_period
+  // steps until the system warms up (at which point the recomputation
+  // typically slows down automatically).
+  int32 placement_period = 3;
+
+  // When any filters are present sessions will ignore all devices which do not
+  // match the filters. Each filter can be partially specified, e.g. "/job:ps"
+  // "/job:worker/replica:3", etc.
+  repeated string device_filters = 4;
+
+  // Options that apply to all GPUs.
+  GPUOptions gpu_options = 6;
+
+  // Whether soft placement is allowed. If allow_soft_placement is true,
+  // an op will be placed on CPU if
+  //   1. there's no GPU implementation for the OP
+  // or
+  //   2. no GPU devices are known or registered
+  // or
+  //   3. need to co-locate with reftype input(s) which are from CPU.
+  bool allow_soft_placement = 7;
+
+  // Whether device placements should be logged.
+  bool log_device_placement = 8;
+
+  // Options that apply to all graphs.
+  GraphOptions graph_options = 10;
+
+  // Global timeout for all blocking operations in this session.  If non-zero,
+  // and not overridden on a per-operation basis, this value will be used as the
+  // deadline for all blocking operations.
+  int64 operation_timeout_in_ms = 11;
+};
+
+// EXPERIMENTAL. Options for a single Run() call.
+message RunOptions {
+  // TODO(pbar) Turn this into a TraceOptions proto which allows
+  // tracing to be controlled in a more orthogonal manner?
+  enum TraceLevel {
+    NO_TRACE = 0;
+    SOFTWARE_TRACE = 1;
+    HARDWARE_TRACE = 2;
+    FULL_TRACE = 3;
+  }
+  TraceLevel trace_level = 1;
+
+  // Time to wait for operation to complete in milliseconds.
+  int64 timeout_in_ms = 2;
+
+  // The thread pool to use, if session_inter_op_thread_pool is configured.
+  int32 inter_op_thread_pool = 3;
+}
+
+// EXPERIMENTAL. Metadata output (i.e., non-Tensor) for a single Run() call.
+message RunMetadata {
+  // Statistics traced for this step. Populated if tracing is turned on via the
+  // "RunOptions" proto.
+  // EXPERIMENTAL: The format and set of events may change in future versions.
+  StepStats step_stats = 1;
+
+  // The cost graph for the computation defined by the run call.
+  CostGraphDef cost_graph = 2;
+}
+```
+
+简单的看了一下这个代码, 谷歌的tensorflow 团队难道是拿 protobuf 当做自动生成配置相关的类的工具?
+
+---
+
+## saver.proto
+
+```protobuf
+
+syntax = "proto3";
+
+package tensorflow;
+// option cc_enable_arenas = true;
+option java_outer_classname = "SaverProtos";
+option java_multiple_files = true;
+option java_package = "org.tensorflow.util";
+
+// Protocol buffer representing the configuration of a SaveRestoreHelper.
+message SaverDef {
+  // The name of the tensor in which to specify the filename when saving or
+  // restoring a model checkpoint.
+  string filename_tensor_name = 1;
+
+  // The operation to run when saving a model checkpoint.
+  string save_tensor_name = 2;
+
+  // The operation to run when restoring a model checkpoint.
+  string restore_op_name = 3;
+
+  // Maximum number of checkpoints to keep.  If 0, no checkpoints are deleted.
+  int32 max_to_keep = 4;
+
+  // Shard the save files, one per device that has Variable nodes.
+  bool sharded = 5;
+
+  // How often to keep an additional checkpoint. If not specified, only the last
+  // "max_to_keep" checkpoints are kept; if specified, in addition to keeping
+  // the last "max_to_keep" checkpoints, an additional checkpoint will be kept
+  // for every n hours of training.
+  float keep_checkpoint_every_n_hours = 6;
+}
+
+```
+
+又看了一个源码 saver.proto, 我现在确定了一点, 就是protobuf 有种用法就是取代简单的struct来整合信息, 这个要比struct方便很多, protobuf 会自动的生成需要的read & write 接口函数.
+
+----
+
+今天学会一个新的技巧, 可以在以后用一下!!
