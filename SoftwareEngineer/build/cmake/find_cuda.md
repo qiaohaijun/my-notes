@@ -19,3 +19,15 @@ include_directories(
 
 ---
 clion IDE 因为有自动补齐的功能, 所以对于初学者, 很友好
+
+---
+如果要使用 cuda相关的命令, 需要使用
+
+```
+find_package(CUDA)
+```
+来引入cuda相关的命令.
+
+从这里来看, cmake也是由core + package构建的.
+
+---
