@@ -13,5 +13,5 @@ void * malloc( the memory you need )
 
 ### cudaMalloc函数
 ```
- cudaMalloc(&ptr_d_memory, the gpu memory you need)
+cudaError_t cudaMalloc (void **devPtr, size_t  size );   
 ```
