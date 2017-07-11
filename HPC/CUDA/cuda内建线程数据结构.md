@@ -27,7 +27,7 @@ threadIdx 是三维的
 具体的显存地址.
 
 **address = blockIdx.x * blockDim.x + threadIdx.x**
-
+blockdim: number of threads in a block
 
 
 
