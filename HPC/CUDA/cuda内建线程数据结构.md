@@ -36,16 +36,14 @@ CUDA 并行程序设计 GPU 编程指南
 
  P78, 第五章 线程网络,线程块以及线程
  
- cuda内建的thread相关的数据结构
+> cuda内建的thread相关的数据结构
  
- gridDim.x 线程网格X维度上线程块的数量
- gridDim.y 线程网格Y维度上线程块的数量
- 
- blockDim.x 一个线程块X维度上的线程数量
- blockDim.y 一个线程块Y维度上的线程数量
- 
- threadIdx.x 线程块X维度上的线程索引
- threadIdx.y 线程块Y维度上的线程索引
+> - gridDim.x 线程网格X维度上线程块的数量
+> - gridDim.y 线程网格Y维度上线程块的数量
+> - blockDim.x 一个线程块X维度上的线程数量
+> - blockDim.y 一个线程块Y维度上的线程数量
+> - threadIdx.x 线程块X维度上的线程索引
+> - threadIdx.y 线程块Y维度上的线程索引
  
  ---
  
