@@ -33,3 +33,14 @@ void hello(char* a, int *b){
 
 }
 ```
+
+
+---
+
+上面代码的写法的好处
+1. kernel函数使用KERNEL前缀, 增加可读性
+2. cpp的函数的名字和kernel函数的名字一致, 可读性很高
+3. 头文件放到.h文件中
+4. kernel和cpp代码放到cu文件中
+
+很好的代码布局策略.
