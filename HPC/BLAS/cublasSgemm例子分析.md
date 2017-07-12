@@ -33,9 +33,9 @@ C = alpha * op(A) * op(B) + beta * C
 
 ---
 
-op(A)的shape => (m,k)
-op(B)的shape => (k,n)
-C的shape => (m,n)
+- op(A)的shape => (m,k)
+- op(B)的shape => (k,n)
+- C的shape => (m,n)
 
 ---
 
