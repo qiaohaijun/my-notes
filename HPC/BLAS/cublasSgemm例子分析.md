@@ -20,12 +20,6 @@
 ```
 
 ---
-### fortran 表示法
-A(m,n)
-1. m表示列
-2. n表示行
-
----
 
 ### 函数原型 
 
@@ -50,11 +44,26 @@ C = alpha * op(A) * op(B) + beta * C
 - C的指针 `ptr_d_query_workspace_small_output`
 
 #### big_input
-1. 每个vector连续存储, (100,qw_size) 
+使用列表示法如下
+- 每个vector连续存储, (100,qw_size) 
+- 100 表示一个列向量的大小
+- qw_size 表示多少个列向量
+ 
+使用c语言二维矩阵表示法
+- A[qw_size][100]
+对于熟悉C的程序员, 这个不用多解释
+
 
 ### small input
-1. 全部为1.0 [qw_size,1]
+1. 全部为1.0 (qw_size,1)
 
 ### small_ouput
-输出的结果为 []100, 1]
+输出的结果为 (100, 1)
+
+---
+
+### 为了方便记忆, 做一下规定
+1. fortran表示法为(column_size, row_size)表示shape
+2. c语言表示法使用A[row_size][column_size]表示shape
+
 
