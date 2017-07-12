@@ -14,21 +14,15 @@
 
 
 ---
-
-```
-cublasStatus_t cublasSetMatrix(int rows, int cols, int elementSize,const void *A, int lda, void *B, int ldb);
-```
-
-> 这些参数大部分看名字就知道什么意思了，其中lda和ldb指明了源矩阵A和目的矩阵B的主维度（leading dimension），所谓主维就是矩阵的行总数, 这个参数只在需要> host矩阵一部分数据的时候很有用. 
-> 也就是说，当需要完整的矩阵时，lda和ldb都应该是M。
-
----
-
-> leading dimensions你可以理解为矩阵的第一维，比如你上面的矩阵，ldA=3。
-> 需要注意的是：CUBLAS排列矩阵的方式是列优先，不同于一般C语言行优先原则
-
+> This refers to the first index in the dimension
+> you specify for the matrix. For example: 
+> If you had dimensioned table as table(20,10) 
+> then the leading dimension would be 20. 
 
 ---
 
 
 leading dimension 就是主维度.
+
+## 参考
+- http://www.netlib.org/utk/forums/netlib/messages/272.html
