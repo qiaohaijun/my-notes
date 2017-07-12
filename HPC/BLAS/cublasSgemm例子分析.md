@@ -37,6 +37,9 @@ C = alpha * op(A) * op(B) + beta * C
 - op(B)的shape => (k,n)
 - C的shape => (m,n)
 
+1. (m,k) m表示列向量的大小, k表示有多少个列向量
+
+
 ---
 
 - A的指针 `ptr_d_query_workspace_big_input`
