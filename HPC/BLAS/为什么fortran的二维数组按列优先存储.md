@@ -10,4 +10,4 @@
 ## 参考
 - https://www.zhihu.com/question/21766240
 
-[image]https://github.com/qiaohaijun/mycpt-notes/blob/master/img/blas/fortran%E8%A1%8C%E5%88%97%E5%AD%98%E5%82%A8.gif?raw=true
+![image](https://github.com/qiaohaijun/mycpt-notes/blob/master/img/blas/fortran%E8%A1%8C%E5%88%97%E5%AD%98%E5%82%A8.gif?raw=true)
