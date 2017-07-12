@@ -5,9 +5,16 @@
 
 ---
 
+`内存中是没有行列的概念的`, 不管是二维数组,还是N维的tensor,在内存中都是一条线.
+
+在这个物理存储的层面上, Fortran和C是没有区别的.
+
+下面表示 [1,2,3,4,5,6,7,8]
+![image](https://github.com/qiaohaijun/mycpt-notes/blob/master/img/blas/fortran%E8%A1%8C%E5%88%97%E5%AD%98%E5%82%A8.gif?raw=true)
+
 
 
 ## 参考
 - https://www.zhihu.com/question/21766240
+- http://fcode.cn/guide-45-1.html
 
-![image](https://github.com/qiaohaijun/mycpt-notes/blob/master/img/blas/fortran%E8%A1%8C%E5%88%97%E5%AD%98%E5%82%A8.gif?raw=true)
