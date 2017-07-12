@@ -15,9 +15,12 @@
 
 ---
 > This refers to the first index in the dimension
- you specify for the matrix. For example: 
- If you had dimensioned table as table(20,10) 
- then the leading dimension would be 20. 
+
+> you specify for the matrix. For example: 
+
+> If you had dimensioned table as table(20,10) 
+
+> then the leading dimension would be 20. 
 
 ---
 
