@@ -39,7 +39,7 @@ C的shape => (m,n)
 
 ---
 
-A的指针 `ptr_d_query_workspace_big_input`
-B的指针 `ptr_d_query_workspace_small_input`
-C的指针 `ptr_d_query_workspace_small_output`
+- A的指针 `ptr_d_query_workspace_big_input`
+- B的指针 `ptr_d_query_workspace_small_input`
+- C的指针 `ptr_d_query_workspace_small_output`
 
