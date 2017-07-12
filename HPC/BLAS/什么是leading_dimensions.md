@@ -19,8 +19,9 @@
 cublasStatus_t cublasSetMatrix(int rows, int cols, int elementSize,const void *A, int lda, void *B, int ldb);
 ```
 
-这些参数大部分看名字就知道什么意思了，其中lda和ldb指明了源矩阵A和目的矩阵B的主维度（leading dimension），所谓主维就是矩阵的行总数, 这个参数只在需要host矩阵一部分数据的时候很有用. 
-也就是说，当需要完整的矩阵时，lda和ldb都应该是M。
+> 这些参数大部分看名字就知道什么意思了，其中lda和ldb指明了源矩阵A和目的矩阵B的主维度（leading dimension），所谓主维就是矩阵的行总数, 这个参数只在需要> host矩阵一部分数据的时候很有用. 
+> 也就是说，当需要完整的矩阵时，lda和ldb都应该是M。
+
 ---
 
 > leading dimensions你可以理解为矩阵的第一维，比如你上面的矩阵，ldA=3。
@@ -28,3 +29,6 @@ cublasStatus_t cublasSetMatrix(int rows, int cols, int elementSize,const void *A
 
 
 ---
+
+
+leading dimension 就是主维度.
