@@ -22,5 +22,24 @@
 ---
 
 ### 函数原型 
-Let `$\text{S}_1(N) = \sum_{p=1}^N \text{E}(p)$`
+
+C = alpha * op(A) * op(B) + beta * C
+
+- alpha 是scalar
+- beta 是 scalar
+- A 矩阵
+- B 矩阵
+- C 矩阵
+
+---
+
+op(A)的shape => (m,k)
+op(B)的shape => (k,n)
+C的shape => (m,n)
+
+---
+
+A的指针 `ptr_d_query_workspace_big_input`
+B的指针 `ptr_d_query_workspace_small_input`
+C的指针 `ptr_d_query_workspace_small_output`
 
