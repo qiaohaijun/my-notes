@@ -1,3 +1,5 @@
+### kernel代码
+
 ```
 __global__ void KERNEL_EWFloatAdd(float* des, float* ina, float* inb,
 		int single_size, int batch_cnt,
@@ -13,6 +15,14 @@ __global__ void KERNEL_EWFloatAdd(float* des, float* ina, float* inb,
 	}
 	return;
 }
+```
+#### 可以借鉴的地方
+
+1. 使用`KERNEL_` 前缀表明是gpu代码
+2. EW是深度学习领域大家都在使用的缩写 element wise
+
+### cpu 调用代码
+```
 
 int EWFloatAdd(float* des, float* ina, float* inb, int single_size, int batch_cnt,
 		int ld_des, int ld_ina, int ld_inb, dl_kernel::ThreadContext* context) {
