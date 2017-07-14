@@ -5,6 +5,12 @@
 ```
 ![](http://latex.codecogs.com/gif.latex?\\frac{1}{1+sin(x)})
 ```
+效果如下:
+
+![](http://latex.codecogs.com/gif.latex?\\frac{1}{1+sin(x)})
+
+![](http://latex.codecogs.com/gif.latex?\\sum{1}{1+sin(x)})
+
 效果还不错.  
 
 
