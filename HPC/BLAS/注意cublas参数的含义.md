@@ -28,3 +28,5 @@ op 操作说的是是否进行转置, 以及如何转置.
 
 
 
+#
+![]https://yuml.me/diagram/scruffy/class/[User|+Forename+;Surname;+HashedPassword;-Salt|+Login();+Logout()]
