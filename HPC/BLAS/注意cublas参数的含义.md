@@ -27,6 +27,3 @@ op 操作说的是是否进行转置, 以及如何转置.
 1. 阅读参数解释的时候, 看看参数是和 矩阵 op(A) 有关的, 还是和矩阵 A 有关的.
 
 
-
-#
-![](https://yuml.me/diagram/scruffy/class/[User|+Forename+;Surname;+HashedPassword;-Salt|+Login();+Logout()])
