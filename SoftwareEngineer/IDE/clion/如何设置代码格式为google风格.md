@@ -1,3 +1,5 @@
+#### 配置步骤
+
 1. 首先选择settings
 2. 选择 editor
 3. 选择 code stype
