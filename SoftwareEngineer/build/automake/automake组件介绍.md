@@ -24,3 +24,5 @@ create aclocal.m4 by scanning configure.ac
 
 ### 参考文件
 - http://www.laruence.com/2009/11/18/1154.html
+- http://thebigdoc.readthedocs.io/en/latest/auto-make-conf.html
+- https://www.ibm.com/developerworks/cn/linux/l-makefile/
