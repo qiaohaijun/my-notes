@@ -56,3 +56,22 @@ int memset_device_async(void* dst, int value, int size,
 }
 
 ```
+好的代码, 给人生命增加尺度
+
+```cxx
+
+__global__ void KERNEL_Float_Vector_Shuffle(float** dst_ptrs, float** src_ptrs,
+		int single_size, int batch_cnt) {
+	int batch_idx = blockIdx.x * blockDim.y + threadIdx.y;
+	int idx_in_batch = threadIdx.x;
+	if (batch_idx < batch_cnt) {
+		float* src_ptr = src_ptrs[batch_idx];
+		float* dst_ptr = dst_ptrs[batch_idx];
+		for (int idx = idx_in_batch; idx < single_size; idx += WARP_SIZE) {
+			dst_ptr[idx] = src_ptr[idx];
+		}
+	}
+	return;
+}
+
+```
