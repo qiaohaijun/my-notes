@@ -1,7 +1,9 @@
 #### autoscan
 
 
+
 #### configure.scan
+
 
 
 #### aclocal
@@ -13,3 +15,12 @@ aclocal
 create aclocal.m4 by scanning configure.ac
 
 ```
+
+#### autoconf
+
+
+#### 
+
+
+### 参考文件
+- http://www.laruence.com/2009/11/18/1154.html
