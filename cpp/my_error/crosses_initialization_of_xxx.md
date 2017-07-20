@@ -1,3 +1,11 @@
+### 原因
+因为我使用了`goto`语句
+1. goto语句之后不能声明变量的初始化, 会导致不确定性的行为
+
+### 参考资料
+- http://blog.sina.com.cn/s/blog_4b9eab320100s8s1.html
+
+### error输出
 ```
 desm_word_vector_dict_node.cc:299:7: error:   crosses initialization of ‘int vec_dim’
    int vec_dim = dwvdngd->vec_size;
