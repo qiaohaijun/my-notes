@@ -1,3 +1,3 @@
 https://stanford.edu/~songhan/
 
-![]()https://stanford.edu/~songhan/songhan.jpg)
+![](https://stanford.edu/~songhan/songhan.jpg)
