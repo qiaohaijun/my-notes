@@ -34,7 +34,7 @@ TF-quantization 项目提供了以下工具和代码
 
 #### 原理示意图
 
-TF-quantization 主要思想就是将 32bit 的浮点运算通过 ==graph-quantization== 脚本转化为8bit 的 fixedpoint 运算
+TF-quantization 主要思想就是将 32bit 的浮点运算通过 `graph-quantization` 脚本转化为8bit 的 fixedpoint 运算
 
 32bit 浮点运算| 8bit 定点运算
 ---|---
@@ -70,8 +70,8 @@ TF-quantization 实现了一系列便于实验的脚本， TF-inception 项目�
 
 模型 | Size |	Top1 精度 | Top5 精度 |	速度@CPU|速度@GPU
 ---|---|---|---|---|---
-Origin model |	97MB |	0.7872|0.9436	|==12/sec==|==70/sec==
-Quantized Model	| 23MB 	|0.7663	|0.9319 |==1.6/sec==|==N/A==
+Origin model |	97MB |	0.7872|0.9436	|`12/sec`|`70/sec`
+Quantized Model	| 23MB 	|0.7663	|0.9319 |`1.6/sec`|`N/A`
 
 ```
 补充说明
@@ -132,7 +132,7 @@ P4 和 P40 中增加大量的 int8 计算单元，这种新的芯片架构对于
 
 尤其是 P4 GPU卡的功耗只有50W
 
-NVIDIA 作为一家提供软件和硬件一体化的公司， 在提供了支持 INT8 计算的GPU的同时， 提供了一个 DL 推断框架 **==TensorRT==**，这个框架的使用和谷歌提供的Tensorflow quantization 非常的相似。 下图就是这个过程的图示。
+NVIDIA 作为一家提供软件和硬件一体化的公司， 在提供了支持 INT8 计算的GPU的同时， 提供了一个 DL 推断框架 **`TensorRT`**，这个框架的使用和谷歌提供的Tensorflow quantization 非常的相似。 下图就是这个过程的图示。
 ![image](https://coding.net/u/qiaohaijun/p/my-doc/git/raw/master/data/TRT_Graphics_FINAL.png)
 
 其中的第二个阶段 TensorRT optimizer 应该是 Tensorflow 的 quantization 一样的逻辑过程。
