@@ -15,7 +15,7 @@ CNN Network quantization 阶段总结
 
 TF-quantization 原来是 tensorflow 的一个 contrib 中的内容， 现在已经移到 master 分支中的核心代码中。
 
-详细描述这个工作的内容是 ==Pete Warden==（google brain tensorflow group 中负责 mobile 和 embeding 设备的 team lead）
+详细描述这个工作的内容是 `Pete Warden（google brain tensorflow group 中负责 mobile 和 embeding 设备的 team lead）
 
 #### 代码
 
