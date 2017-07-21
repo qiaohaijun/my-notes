@@ -1,4 +1,4 @@
-Network quantization 阶段总结
+CNN Network quantization 阶段总结
 ====
 
 ## 提纲
@@ -20,7 +20,7 @@ TF-quantization 原来是 tensorflow 的一个 contrib 中的内容， 现在已
 #### 代码
 
 TF-quantization 项目提供了以下工具和代码
-* ==graph-quantization== 脚本，用来将32bit 浮点型的参数（weight和conv filter 等等）quantizate 为 8bit 的定点
+* `graph-quantization` 脚本，用来将32bit 浮点型的参数（weight和conv filter 等等）quantizate 为 8bit 的定点
 * 提供了常用的 CNN 网络需要的 ops 的quantization 版本， 这个是它实现的  [operator](https://github.com/tensorflow/tensorflow/tree/r0.11/tensorflow/contrib/quantization/kernels) 的页面,下面是我从中找出的几个 ops
 
 ```
