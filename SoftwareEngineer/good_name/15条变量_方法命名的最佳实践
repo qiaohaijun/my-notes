@@ -1,0 +1,38 @@
+15条变量&方法命名的最佳实践
+===
+
+原文地址：15 Best Practices of Variable & Method Naming
+
+不同的代码段采用不同的命名长度。通常来说，循环计数器（loop counters）采用1位的单字符来命名，循环判断变量（condition/loop variables）采用1个单词来命名，方法采用1-2个单词命名，类采用2-3个单词命名，全局变量采用3-4个单词命名。
+对变量采用具体的命名（specific names）方式，”value”, “equals”, “data”在任何情况下都不是一种有效的命名方式。
+采用有意义的命名（meaningful names）。变量的名字必须准确反映它的含义和内容。
+不要用 o_, obj_, m_ 等前缀命名。变量不需要前缀标签来表示自己是一个变量。
+遵循公司的变量命名规则，在项目中坚持使用同一种变量命名方式。例如txtUserName, lblUserName, cmbSchoolType等，否则会对可读性造成影响，而且会令查找/替换工具（find/replace tools）不可用。
+遵循当前语言的变量命名规则，不要不统一（inconsistently）地使用大/小写字母。例如：userName, UserName, USER_NAME, m_userName, username, …。
+以Java为例:
+* 类名使用驼峰命名法（Camel Case）：VelocityResponseWriter
+* 包名使用小写：com.company.project.ui
+* 变量使用首字母小写的驼峰命名法（Mixed Case）：studentName
+* 常量使用大写:MAX_PARAMETER_COUNT = 100
+* 枚举类（enum class）采用驼峰命名法，枚举值（enum values）采用大写。
+* 除了常量和枚举值以外，不要使用下划线’_’
+在同一个类不同的场景（contexts）中不要复用变量名。例如在方法、初始化方法和类中。这样做可以提高可读性和可维护性。
+不要对不同使用目的的变量使用同一个变量名，而是赋予它们不同的名字。这同样对保持可读性和可维护性很重要。
+变量名不要使用非ASCII字符（non-ASCII chars）。这样做可能会在跨平台使用时产生问题。
+不要使用过长的变量名（例如50个字符）。过长的变量名会导致代码丑陋（ugly）和难以阅读（hard-to-read），还可能因为字符限制在某些编译器上存在兼容性问题。
+仅使用一种自然语言（natural language）来命名变量。例如，同时使用德语和英语来命名变量会导致（理解）不一致和降低可读性。
+使用有意义的方法名。方法名必须准确表达该方法的行为，在多数情况下以动词（verb）开头。（例如：createPasswordHash）
+遵循公司的方法命名规则，在项目中坚持使用同一种方法命名方式。例如 getTxtUserName(), getLblUserName(), isStudentApproved()，否则会对可读性造成影响，而且会令查找/替换工具不可用。
+遵循当前语言的变量命名规则，不要不统一地使用大/小写字母。例如：getUserName, GetUserName, getusername, …。
+以Java为例:
+* 方法使用首字母小写的驼峰命名法：getStudentSchoolType
+* 方法参数使用首字母小写的驼峰命名法：setSchoolName(String schoolName)
+使用有意义的方法参数命名，这样做可以在没有文档的情况下尽量做到“自解释（documentate itself）”
+
+---
+
+作者 legendmohe
+发布于 2014/04/15
+分类 备忘、思维、技术
+标签 变量、命名、方法、最佳实践
+发表评论
