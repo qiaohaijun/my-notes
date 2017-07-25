@@ -1,0 +1,43 @@
+- word2vec https://arxiv.org/abs/1310.4546
+- sentence2vec, paragraph2vec, doc2vec http://arxiv.org/abs/1405.4053
+- tweet2vec http://arxiv.org/abs/1605.03481
+- tweet2vec https://arxiv.org/abs/1607.07514
+- author2vec http://dl.acm.org/citation.cfm?id=2889382
+- item2vec http://arxiv.org/abs/1603.04259
+- lda2vec https://arxiv.org/abs/1605.02019
+- illustration2vec http://dl.acm.org/citation.cfm?id=2820907
+- tag2vec http://ktsaurabh.weebly.com/uploads/3/1/7/8/31783965/distributed_representations_for_content-based_and_personalized_tag_recommendation.pdf
+- category2vec http://www.anlp.jp/proceedings/annual_meeting/2015/pdf_dir/C4-3.pdf
+- topic2vec http://arxiv.org/abs/1506.08422
+- image2vec http://arxiv.org/abs/1507.08818
+- app2vec http://paul.rutgers.edu/~qma/research/ma_app2vec.pdf
+- prod2vec http://dl.acm.org/citation.cfm?id=2788627
+- meta-prod2vec http://arxiv.org/abs/1607.07326
+- sense2vec http://arxiv.org/abs/1511.06388
+- node2vec http://www.kdd.org/kdd2016/papers/files/Paper_218.pdf
+- subgraph2vec http://arxiv.org/abs/1606.08928
+- wordnet2vec http://arxiv.org/abs/1606.03335
+- doc2sent2vec http://research.microsoft.com/apps/pubs/default.aspx?id=264430
+- context2vec http://u.cs.biu.ac.il/~melamuo/publications/context2vec_conll16.pdf
+- rdf2vec http://iswc2016.semanticweb.org/pages/program/accepted-papers.html#research_ristoski_32
+- hash2vec http://arxiv.org/abs/1608.08940
+- query2vec http://www.cs.cmu.edu/~dongyeok/papers/query2vec_v0.2.pdf
+- gov2vec http://arxiv.org/abs/1609.06616
+- novel2vec http://aics2016.ucd.ie/papers/full/AICS_2016_paper_48.pdf
+- emoji2vec http://arxiv.org/abs/1609.08359
+- video2vec https://staff.fnwi.uva.nl/t.e.j.mensink/publications/habibian16pami.pdf
+- sen2vec https://arxiv.org/abs/1610.08078
+- content2vec http://104.155.136.4:3000/forum?id=ryTYxh5ll
+- cat2vec http://104.155.136.4:3000/forum?id=HyNxRZ9xg
+- diet2vec https://arxiv.org/abs/1612.00388
+- mention2vec https://arxiv.org/abs/1612.02706
+- POI2vec http://www.ntu.edu.sg/home/boan/papers/AAAI17_Visitor.pdf
+- wang2vec http://www.cs.cmu.edu/~lingwang/papers/naacl2015.pdf
+- dna2vec https://arxiv.org/abs/1701.06279
+- pin2vec https://labs.pinterest.com/assets/paper/p2p-www17.pdf, ([cited blog](https://medium.com/the-graph/applying-deep-learning-to-related-pins-a6fee3c92f5e#.erb1i5mze)
+- paper2vec https://arxiv.org/abs/1703.06587
+- struc2vec https://arxiv.org/abs/1704.03165
+
+# option anything2anything model
+- vec2topic http://arxiv.org/abs/1603.04747
+- character2word http://arxiv.org/abs/1508.02096
