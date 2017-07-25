@@ -2,4 +2,4 @@
 
 
 
-![](http://latex.codecogs.com/gif.latex?"Vcontext = \frac {\sum {q_j}}{|Q|} where q_j \in Q")
+![](http://latex.codecogs.com/gif.latex?"Vcontext=\frac{\sum{q_j}}{|Q|}where q_j \in Q")
