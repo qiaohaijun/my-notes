@@ -46,6 +46,6 @@
 
 `兼顾工业级应用和AI前沿技术`, 同时tensorflow可以不断的从其他工中吸收经验教训不断的发展进步.
 
-<table><tr><td bgcolor=orange>这是一条螺旋上升的道路.</td></tr></table>
-
+`这是一条螺旋上升的道路, 持续的正反馈`.
+<font color="red">我是红色的</font>
 
