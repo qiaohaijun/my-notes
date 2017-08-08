@@ -1,0 +1,5 @@
+- lenet
+- alexnet
+- googlenet
+- inception
+- resnet
