@@ -1,6 +1,6 @@
 Numbers Everyone Should Know
 ===
-
+|操作|时间|
 |---|---|
 |L1 cache reference 读取CPU的一级缓存|0.5 ns|
 |Branch mispredict(转移、分支预测)|5 ns|
