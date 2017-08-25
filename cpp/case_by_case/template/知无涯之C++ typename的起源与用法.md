@@ -1,0 +1,2 @@
+### link
+- http://feihu.me/blog/2014/the-origin-and-usage-of-typename/
