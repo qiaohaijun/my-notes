@@ -1,0 +1,509 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0068)http://www.oreilly.com.cn/index.php?func=book&isbn=978-7-121-29704-5 -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<title>《代码不朽：编写可维护软件的10大要则（Java版）》——O'Reilly 北京</title>		<link rel="stylesheet" type="text/css" href="./《代码不朽：编写可维护软件的10大要则（Java版）》——O&#39;Reilly 北京_files/css.php">
+		<script src="./《代码不朽：编写可维护软件的10大要则（Java版）》——O&#39;Reilly 北京_files/hm.js.下载"></script><script language="JavaScript" src="./《代码不朽：编写可维护软件的10大要则（Java版）》——O&#39;Reilly 北京_files/javascript.php"></script>
+		<!--Google Analytics Tracking code-->						
+		<!-- comment off Google analytics since service from Google are blocked.
+		<script type="text/javascript">
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-23065879-1']);
+		  _gaq.push(['_setDomainName', '.oreilly.com.cn']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+			    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			  })();
+
+		</script>
+		-->
+
+		<!--Baidu Analytics-->
+		<script>
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "//hm.baidu.com/hm.js?19080bdb5f31995e2730bdaafd272086";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+		</script>
+
+		<script type="text/javascript" src="./《代码不朽：编写可维护软件的10大要则（Java版）》——O&#39;Reilly 北京_files/jquery-1.6.1.min.js.下载"></script>
+		<script type="text/javascript" src="./《代码不朽：编写可维护软件的10大要则（Java版）》——O&#39;Reilly 北京_files/jquery.cookie.js.下载"></script>
+		<script type="text/javascript" src="./《代码不朽：编写可维护软件的10大要则（Java版）》——O&#39;Reilly 北京_files/jquery.dcjqaccordion.2.7.min.js.下载"></script>
+		<script type="text/javascript" src="./《代码不朽：编写可维护软件的10大要则（Java版）》——O&#39;Reilly 北京_files/jquery.hoverIntent.minified.js.下载"></script>
+		<script type="text/javascript" src="./《代码不朽：编写可维护软件的10大要则（Java版）》——O&#39;Reilly 北京_files/jquery.bgiframe.min.js.下载"></script>
+		
+		<script type="text/javascript">
+		$(document).ready(function(){
+			$('#accordion').dcAccordion({
+				autoClose: false,
+				speed: 'fast',
+			});
+		});
+
+		//the div of accordion was set to display none before everything is ready. Now show it.
+		$("#accordion").ready(function(){$("#accordion").css("display", "block")});
+		</script>
+	
+	<style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+.en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+
+.en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}
+</style></head>
+	<body style="">
+<div class="page_border">
+<div class="banner"><a href="http://www.oreilly.com.cn/index.php?func=newreleases"><img src="./《代码不朽：编写可维护软件的10大要则（Java版）》——O&#39;Reilly 北京_files/oreilly-books-videos-header.gif" border="0" alt="O" reilly="" media,="" inc.'=""></a><script type="text/javascript">document.write(unescape('%3Cdiv id="bdcs"%3E%3C/div%3E%3Cscript charset="utf-8" src="http://rp.baidu.com/rp3w/3w.js?sid=6285647860384875894') + '&t=' + (Math.ceil(new Date()/3600000)) + unescape('"%3E%3C/script%3E'));</script><div id="bdcs"></div><script charset="utf-8" src="http://rp.baidu.com/rp3w/3w.js?sid=6285647860384875894&amp;t=417770"></script></div><!--end of banner-->
+<div class="page_top_menu"><div class="chromestyle" id="chromemenu"><ul><li><a href="http://www.oreilly.com.cn/index.php" rel="dropmenu1">首页 </a></li><li class="selected"><a href="http://www.oreilly.com.cn/index.php?func=newreleases" rel="dropmenu2">产品 </a></li><li><a href="https://www.oreilly.com.cn/ideas" rel="dropmenu3">数据 </a></li><li><a href="http://safari.oreilly.com/?cid=orm-nav-global" rel="dropmenu4">Safari Books Online </a></li><li><a href="http://www.oreilly.com.cn/index.php?func=conferences" rel="dropmenu5">会议 </a></li><li class="social_buttons">
+<span><a href="http://t.sina.com.cn/oreillybeijing"><img style="vertical-align: text-top;" alt="O&#39;Reilly Beijing on Weibo" src="./《代码不朽：编写可维护软件的10大要则（Java版）》——O&#39;Reilly 北京_files/weiboLOGO_16x16.png"></a><a href="http://feed.feedsky.com/OReillyBeijing"><img style="vertical-align: text-top;" alt="News and New Titles Feed" src="./《代码不朽：编写可维护软件的10大要则（Java版）》——O&#39;Reilly 北京_files/feed-icon-16x16.png"></a></span></li></ul></div><div id="dropmenu1" class="dropmenudiv"></div>
+<div id="dropmenu2" class="dropmenudiv"><a class="item2" href="http://www.oreilly.com.cn/index.php?func=newreleases">新书</a><a class="item2" href="http://www.oreilly.com.cn/index.php?func=upcoming">即将出版</a><a class="item2" href="http://www.oreilly.com.cn/index.php?func=completelist">全部书目</a><a class="item2" href="http://www.oreilly.com.cn/index.php?func=orderinfo">订购信息</a></div>
+<div id="dropmenu3" class="dropmenudiv"></div>
+<div id="dropmenu4" class="dropmenudiv"></div>
+<div id="dropmenu5" class="dropmenudiv"><a class="item2" href="http://strata.oreilly.com.cn/">Strata北京</a><a class="item2" href="http://velocity.oreilly.com.cn/">Velocity中国</a><a class="item2" href="http://conferences.oreillynet.com/">O'Reilly Conferences</a></div>
+		</div>
+<div class="menu_2nd"><ul><li class=""><a href="http://www.oreilly.com.cn/index.php?func=newreleases">新书</a></li><li class=""><a href="http://www.oreilly.com.cn/index.php?func=upcoming">即将出版</a></li><li class=""><a href="http://www.oreilly.com.cn/index.php?func=completelist">全部书目</a></li><li class="menu_2nd_last"><a href="http://www.oreilly.com.cn/index.php?func=orderinfo">订购信息</a></li></ul>
+</div>
+			<div class="columns">
+			<div style="clear: both;">&nbsp;</div>
+
+<link rel="stylesheet" type="text/css" href="./《代码不朽：编写可维护软件的10大要则（Java版）》——O&#39;Reilly 北京_files/jquery.lightbox-0.5.css" media="screen">
+<script type="text/javascript" src="./《代码不朽：编写可维护软件的10大要则（Java版）》——O&#39;Reilly 北京_files/jquery.lightbox-0.5.pack.js.下载"></script>
+
+<div class="left_column_in_book_page">
+<div class="cover_container">
+<img src="./《代码不朽：编写可维护软件的10大要则（Java版）》——O&#39;Reilly 北京_files/build_maintainable_sw_java-ptp_cvr.gif" border="0" title="代码不朽：编写可维护软件的10大要则（Java版）" alt="代码不朽：编写可维护软件的10大要则（Java版）" width="100%"><div id="large_cover_link" style="margin-left: 65px; margin-top: 4px;"><a class="lightbox" href="./《代码不朽：编写可维护软件的10大要则（Java版）》——O&#39;Reilly 北京_files/build_maintainable_sw_java-ptp_cvr_l.gif">放大封面</a>
+</div>
+</div><!--end of cover_container-->
+
+<script type="text/javascript">
+$(function() {
+	$('a.lightbox').lightBox(); // Select all links with lightbox class
+});
+</script>
+
+<div id="title" class="plain_page_title">代码不朽：编写可维护软件的10大要则（Java版）</div>
+<div><a href="http://www.oreilly.com.cn/index.php?func=author&amp;name=Joost+Visser">Joost Visser</a> 著</div>
+<div>张若飞 译</div>
+<div>出版时间：2016年10月</div>
+<div>页数：160</div>
+
+<script language="JavaScript" charset="utf-8">
+var desc, fullDesc;
+
+function abridgeDescription() {
+  var descMin = 200, descMax = 230, minViable = 30, descCount = 0, descContent = "";
+
+  var moreLink = document.createElement('a');
+  moreLink.className ="readmore-js-toggle";
+  moreLink.href = "javascript:showFullDescription();";
+  var moreLinkContent = document.createTextNode("展开全部内容介绍");
+  moreLink.appendChild(moreLinkContent);
+
+  desc = document.getElementById("detail-description-container");
+  fullDesc = desc.innerHTML;
+  var descNodes = getTextNodesIn(desc);
+
+  for (var i = 0; i < descNodes.length; i++) {
+    var descPreCount = descCount;
+    descCount += descNodes[i].length;
+
+    if (descCount >= descMin) {
+      if (descCount <= descMax) {
+        //Cut off at end of node
+        var descPointer = descNodes[i];
+        while (descPointer.nodeName != "DIV") {
+          while (descPointer.nextSibling != null) {
+            var nextSib = descPointer.nextSibling;
+            nextSib.parentNode.removeChild(nextSib);
+          }
+          descPointer = descPointer.parentNode;
+        }
+        desc.appendChild(moreLink);
+      }
+      else {
+        //Cut off in the middle of node
+        descCount = descMax - descPreCount;
+        descString = descNodes[i].nodeValue;
+        descString = descString.slice(0,descCount);
+        descString = descString.slice(0,descString.lastIndexOf(' '));
+        descNodes[i].nodeValue = descString.concat('......');
+
+        //Remove all further nodes
+        var descPointer = descNodes[i];
+        while (descPointer.nodeName != "DIV") {
+          while (descPointer.nextSibling != null) {
+            var nextSib = descPointer.nextSibling;
+            nextSib.parentNode.removeChild(nextSib);
+          }
+          descPointer = descPointer.parentNode;
+        }
+        desc.appendChild(moreLink);
+      }
+      break;
+    }
+  }
+}
+
+function showFullDescription() {
+  desc.innerHTML = fullDesc;
+}
+
+function getTextNodesIn(node) {
+  var textNodes = [], whitespace = /^\s*$/;
+
+  function getTextNodes(node) {
+    if (node.nodeType == 3) {
+      if (!whitespace.test(node.nodeValue)) {
+        textNodes.push(node);
+      }
+    }
+    else {
+      for (var i = 0, len = node.childNodes.length; i < len; ++i) {
+        getTextNodes(node.childNodes[i]);
+      }
+    }
+  }
+  getTextNodes(node);
+  return textNodes;
+}
+</script>
+<div id="detail-description-container">你有没有在修改其他人代码时感到过沮丧？如今，难以维护的代码已经成为了软件开发中一个很大的问题，导致成本高昂的延期和大量缺陷。本书从实践出发，提供了10条易于实现的原则，可以帮助你开发出可维护且灵活的软件，并且这些原则来自对成百上千个现实系统的分析。<br>
+本书由软件改进组织（SIG）编写，不仅提供了对问题清晰准确的解释，还包括如何将理论应用到实践的建议。书中所有示例程序虽然都用Java编写，但是书中的原则也适用于使用其他语言的开发人员。<a class="readmore-js-toggle" href="javascript:showFullDescription();">展开全部内容介绍</a></div>
+<script type="text/javascript">abridgeDescription();</script>
+
+<div style="clear: both;"></div>
+
+<script type="text/javascript">
+/* idTabs ~ Sean Catchpole - Version 2.2 - MIT/GPL */
+(function(){var dep={"jQuery":"http://code.jquery.com/jquery-latest.min.js"};var init=function(){(function($){$.fn.idTabs=function(){var s={};for(var i=0;i<arguments.length;++i){var a=arguments[i];switch(a.constructor){case Object:$.extend(s,a);break;case Boolean:s.change=a;break;case Number:s.start=a;break;case Function:s.click=a;break;case String:if(a.charAt(0)=='.')s.selected=a;else if(a.charAt(0)=='!')s.event=a;else s.start=a;break;}}
+if(typeof s['return']=="function")
+s.change=s['return'];return this.each(function(){$.idTabs(this,s);});}
+$.idTabs=function(tabs,options){var meta=($.metadata)?$(tabs).metadata():{};var s=$.extend({},$.idTabs.settings,meta,options);if(s.selected.charAt(0)=='.')s.selected=s.selected.substr(1);if(s.event.charAt(0)=='!')s.event=s.event.substr(1);if(s.start==null)s.start=-1;var showId=function(){if($(this).is('.'+s.selected))
+return s.change;var id="#"+this.href.split('#')[1];var aList=[];var idList=[];$("a",tabs).each(function(){if(this.href.match(/#/)){aList.push(this);idList.push("#"+this.href.split('#')[1]);}});if(s.click&&!s.click.apply(this,[id,idList,tabs,s]))return s.change;for(i in aList)$(aList[i]).removeClass(s.selected);for(i in idList)$(idList[i]).hide();$(this).addClass(s.selected);$(id).show();return s.change;}
+var list=$("a[href*='#']",tabs).unbind(s.event,showId).bind(s.event,showId);list.each(function(){$("#"+this.href.split('#')[1]).hide();});var test=false;if((test=list.filter('.'+s.selected)).length);else if(typeof s.start=="number"&&(test=list.eq(s.start)).length);else if(typeof s.start=="string"&&(test=list.filter("[href*='#"+s.start+"']")).length);if(test){test.removeClass(s.selected);test.trigger(s.event);}
+return s;}
+$.idTabs.settings={start:0,change:false,click:null,selected:".selected",event:"!click"};$.idTabs.version="2.2";$(function(){$(".idTabs").idTabs();});})(jQuery);}
+var check=function(o,s){s=s.split('.');while(o&&s.length)o=o[s.shift()];return o;}
+var head=document.getElementsByTagName("head")[0];var add=function(url){var s=document.createElement("script");s.type="text/javascript";s.src=url;head.appendChild(s);}
+var s=document.getElementsByTagName('script');var src=s[s.length-1].src;var ok=true;for(d in dep){if(check(this,d))continue;ok=false;add(dep[d]);}if(ok)return init();add(src);})();
+</script>
+
+<div class="relative_contents">
+<div id="relative_contents_tabs" class="relative_contents_tabs">
+<div class="tabs_label_ie">
+<ul>
+<li><a href="http://www.oreilly.com.cn/index.php?func=book&amp;isbn=978-7-121-29704-5#tab1" class="selected">目录</a></li>
+<li><a href="http://www.oreilly.com.cn/index.php?func=book&amp;isbn=978-7-121-29704-5#tab2">产品信息</a></li>
+<li><a href="http://www.oreilly.com.cn/index.php?func=book&amp;isbn=978-7-121-29704-5#tab3">关于作者</a></li>
+</ul>
+</div><!--end of tabs_label-->
+<div id="tab1" class="relative_contents_tabs_inner" style="display: block;">
+<div id="toc">
+<ol>
+<li>前言 
+</li>
+<li>第1章 简介 
+</li>
+<li>1.1 什么是可维护性？ 
+</li>
+<li>1.2 为什么可维护性很重要？ 
+</li>
+<li>1.3 本书的三个基本理论 
+</li>
+<li>1.4 对可维护性的误解 
+</li>
+<li>1.5 评价可维护性 
+</li>
+<li>1.6 可维护性原则的概述 
+</li>
+<li>第2章 编写短小的代码单元 
+</li>
+<li>2.1 动机 
+</li>
+<li>2.2 如何使用本原则 
+</li>
+<li>2.3 常见的反对意见 
+</li>
+<li>2.4 参考 
+</li>
+<li>第3章 编写简单的代码单元 
+</li>
+<li>3.1 动机 
+</li>
+<li>3.2 如何使用本原则 
+</li>
+<li>3.3 常见的反对意见 
+</li>
+<li>3.4 参考 
+</li>
+<li>第4章 不写重复代码 
+</li>
+<li>4.1 动机 
+</li>
+<li>4.2 如何使用本原则 
+</li>
+<li>4.3 常见的反对意见 
+</li>
+<li>4.4 参考 
+</li>
+<li>第5章 保持代码单元的接口简单 
+</li>
+<li>5.1 动机 
+</li>
+<li>5.2 如何使用本原则 
+</li>
+<li>5.3 常见的反对意见 
+</li>
+<li>5.4 参考 
+</li>
+<li>第6章 分离模块之间的关注点 
+</li>
+<li>6.1 动机 
+</li>
+<li>6.2 如何使用本原则 
+</li>
+<li>6.3 常见的反对意见 
+</li>
+<li>第7章 架构组件松耦合 
+</li>
+<li>7.1 动机 
+</li>
+<li>7.2 如何使用本原则 
+</li>
+<li>7.3 常见的反对意见 
+</li>
+<li>7.4 参考 
+</li>
+<li>第8章 保持架构组件之间的平衡 
+</li>
+<li>8.1 动机 
+</li>
+<li>8.2 如何使用本原则 
+</li>
+<li>8.3 常见的反对意见 
+</li>
+<li>8.4 参考 
+</li>
+<li>第9章 保持小规模代码库 
+</li>
+<li>9.1 动机 
+</li>
+<li>9.2　如何使用本原则 
+</li>
+<li>9.3 常见的反对意见 
+</li>
+<li>第10章 自动化开发部署和测试 
+</li>
+<li>10.1 动机 
+</li>
+<li>10.2 如何使用本原则 
+</li>
+<li>10.3 常见的反对意见 
+</li>
+<li>10.4 参考 
+</li>
+<li>第11章 编写简洁的代码 
+</li>
+<li>11.1 不留痕迹 
+</li>
+<li>11.2 如何使用本原则 
+</li>
+<li>11.3 常见的反对意见 
+</li>
+<li>第12章 后续事宜 
+</li>
+<li>12.1 将原则变成实践  
+</li>
+<li>12.2 低层级（代码单元）原则要优先于高层级（组件）原则 
+</li>
+<li>12.3 对每次提交负责 
+</li>
+<li>12.4 下一本书会讨论开发流程的最佳实践 
+</li>
+<li>附录A SIG如何来评估可维护性 
+</li>
+<li>索引 </li>
+</ol>
+</div>
+</div>
+<div id="tab2" class="relative_contents_tabs_inner" style="display: none;"><div id="products_details">
+<div>书名：代码不朽：编写可维护软件的10大要则（Java版）</div>
+<div>作者：<a href="http://www.oreilly.com.cn/index.php?func=author&amp;name=Joost+Visser">Joost Visser</a> 著</div>
+<div>译者：张若飞 译</div>
+<div>国内出版社：电子工业出版社</div>
+<div>出版时间：2016年10月</div>
+<div>页数：160</div>
+<div>书号：978-7-121-29704-5</div>
+<div>原版书书名：Building Maintainable Software, Java Edition </div>
+<div>原版书出版商：O'Reilly Media</div>
+</div>
+</div><!--end of tab2-->
+<div id="tab3" class="relative_contents_tabs_inner" style="display: none;"><div id="author-bios"><div><strong>Joost Visser</strong></div>
+<div>&nbsp;</div>
+<div>Joost Visser，SIG研究负责人，掌管这家独一无二的认证软件分析实验室。这家实验室根据ISO 25010国际标准，对软件产品质量进行标准化的测量。本书汇集了SIG顾问们从2000年以来在软件质量测量和建议方面的集体智慧和经验。</div>
+<div>&nbsp;</div>
+<div><a href="http://www.oreilly.com.cn/index.php?func=author&amp;name=Joost+Visser">查看Joost Visser更多信息</a></div>
+<div>&nbsp;</div>
+</div>
+</div><!--end of tab3-->
+</div><!--end of relative_contents_tabs-->
+</div>
+</div>
+
+<script type="text/javascript"> 
+  $("#relative_contents_tabs ul").idTabs(); 
+</script>
+
+<div class="right_column_in_book_page">
+<div id="book_cart_box" class="book_cart_box">
+<div class="book_cart_box_title">购买选项</div>
+<div class="book_cart_box_inner">
+<div class="book_cart_button_line">
+<div class="price">定价：69.00元</div>
+<div class="book_cart_option"><span style="float: right;"><a href="http://www.china-pub.com/computers/common/oreilly.asp?bn=978-7-121-29704-5" target="_blank"><img src="./《代码不朽：编写可维护软件的10大要则（Java版）》——O&#39;Reilly 北京_files/addtobasket_btn.gif" align="left"></a></span><span><a href="http://www.china-pub.com/computers/common/oreilly.asp?bn=978-7-121-29704-5" target="_blank">前往 China-Pub 购买</a></span></div><div class="book_cart_option"><a href="http://www.china-pub.com/tcart/cart_j.asp?tg=0" target="_blank">查看 China-Pub 购物车</a></div><div class="book_cart_option"><a target="_blank" href="http://www.oreilly.com.cn/index.php?func=orderinfo">联系出版社邮购</a></div></div>
+</div>
+</div>
+<div id="related-links" class="related_links" style="clear: both;">
+<div class="related_links_title">相关链接</div>
+<div class="related_links_inner">
+<ul>
+<li><a href="http://www.oreilly.com.cn/index.php?func=errata&amp;isbn=978-7-121-29704-5">勘误表</a></li>
+<li>
+<!--Weibo sharing icon,and RenRen Like icon-->
+<span class="weibo_share">
+<script type="text/javascript" charset="utf-8">
+(function(){
+  var _w = 72 , _h = 16;
+  var param = {
+    url:location.href,
+    type:'3',
+    count:'1', /**是否显示分享数，1显示(可选)*/
+    appkey:'', /**您申请的应用appkey,显示分享来源(可选)*/
+    title:'《代码不朽：编写可维护软件的10大要则（Java版）》', /**分享的文字内容(可选，默认为所在页面的title)*/
+    pic:'http://www.oreilly.com.cn/images/bookcover/build_maintainable_sw_java-ptp_cvr.gif', /**分享图片的路径(可选)*/
+    ralateUid:'2094310615', /**关联用户的UID，分享微博会@该用户(可选)*/
+    rnd:new Date().valueOf()
+  }
+  var temp = [];
+  for( var p in param ){
+    temp.push(p + '=' + encodeURIComponent( param[p] || '' ) )
+  }
+  document.write('<iframe allowTransparency="true" frameborder="0" scrolling="no" src="http://hits.sinajs.cn/A1/weiboshare.html?' + temp.join('&') + '" width="'+ _w+'" height="'+_h+'"></iframe>')
+})()
+</script><iframe allowtransparency="true" frameborder="0" scrolling="no" src="./《代码不朽：编写可维护软件的10大要则（Java版）》——O&#39;Reilly 北京_files/weiboshare.html" width="72" height="16"></iframe>
+</span>
+<!--
+<span class='douban_recommand'><a href="javascript:void(function(){var d=document,e=encodeURIComponent,s1=window.getSelection,s2=d.getSelection,s3=d.selection,s=s1?s1():s2?s2():s3?s3.createRange().text:'',r='http://www.douban.com/recommend/?url='+e(d.location.href)+'&title='+e(d.title)+'&sel='+e(s)+'&v=1',x=function(){if(!window.open(r,'douban','toolbar=0,resizable=1,scrollbars=yes,status=1,width=450,height=330'))location.href=r+'&r=1'};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})()"><img src="http://img2.douban.com/pics/fw2douban_s.png" alt="推荐到豆瓣" /></a>
+</span>
+<span class='qq_weibo'>
+<a href="javascript:void(0)" onclick="postToWb();return false;" class="tmblog"><img src="http://v.t.qq.com/share/images/s/b16.png" border="0" alt="转播到腾讯微博" ></a>
+<script type="text/javascript">
+	function postToWb(){
+		var _t = encodeURI(document.title);
+		var _url = encodeURIComponent(document.location);
+		var _appkey = encodeURI("appkey");//你从腾讯获得的appkey
+		var _pic = 'http://www.oreilly.com.cn/images/bookcover/build_maintainable_sw_java-ptp_cvr.gif';//（例如：var _pic='图片url1|图片url2|图片url3....）
+		var _site = '';//你的网站地址
+		var _u = 'http://v.t.qq.com/share/share.php?url='+_url+'&appkey='+_appkey+'&site='+_site+'&pic='+_pic+'&title='+_t;
+		window.open( _u,'', 'width=700, height=680, top=0, left=0, toolbar=no, menubar=no, scrollbars=no, location=yes, resizable=no, status=no' );
+	}
+</script>
+</span>
+-->
+</li>
+</ul>
+</div>
+</div><!--end of related-links div.-->
+
+<script language="JavaScript" charset="utf-8">
+// added by Douglas to toggle sample chapters
+function toggleSamplechap() {
+		var obj = document.getElementById("samplechap_details");
+		if (obj.style.display == "block") {obj.style.display = "none";}
+		else {obj.style.display = "block";}
+		}
+</script>
+
+
+</div><!--end of right_column_in_book_page-->
+
+</div><!--end of columns-->
+
+<div class="footer">
+
+	<table border="0" style="padding-top:20px;">
+	<tbody>
+
+	<tr><td width="25%" valign="top" align="left" style="padding-right: 20px;">
+		<span style="font-weight: bold" ;="">
+		©&nbsp;2017<br>
+		奥莱利技术咨询(北京)有限公司<br>
+		传真: +86-10-88097463<br>
+		</span>
+		<br>
+		版权所有<br>
+		<a href="http://www.miibeian.gov.cn/" target="_blank">京ICP备05003502号</a><br>
+		</td>
+
+	<td valign="top" class="footercol1">
+		<ul>
+			<li><a href="http://www.oreilly.com.cn/index.php?func=about"><strong>关于 O'Reilly</strong></a></li>
+			<li><a href="http://www.oreilly.com.cn/index.php?func=contacts">联系方式</a></li>
+			<li><a href="http://t.sina.com.cn/oreillybeijing">O'Reilly 北京微博</a></li>
+			<li><a href="http://feed.feedsky.com/OReillyBeijing">RSS Feed</a></li>
+			<li><a href="http://oreilly.com/oreilly/privacy.csp">Privacy Policy</a></li>
+		</ul>
+	</td>
+
+	<td valign="top" class="footercol2">
+		<ul>
+			<li><strong>Community</strong></li>
+			<li><a href="http://animals.oreilly.com/">Animals</a></li>
+			<li><a href="http://www.oreilly.com/authors/">Authors</a></li>
+                        <li><a href="http://oreilly.com/webcasts/">Webcasts</a></li>
+			<li><a href="http://oreilly.com/community/">Community &amp; Featured Users</a></li>
+			<li><a href="http://forums.oreilly.com/">Forums</a></li>	
+			<li><a href="http://elists.oreilly.com/">Newsletters</a></li>
+			<li><a href="http://answers.oreilly.com/">O'Reilly Answers</a></li>
+			<li><a href="http://ug.oreilly.com/">User Groups</a></li>
+                        <li><a href="http://chimera.labs.oreilly.com/">O'Reilly Atlas (beta)</a></li>
+		</ul>
+	</td>
+	<td valign="top" class="footercol3">
+		<ul>
+			<li><strong>Partner Sites</strong></li>
+			<li><a href="http://makezine.com/">makezine.com</a></li>
+			<li><a href="http://makerfaire.com/">makerfaire.com</a></li>
+			<li><a href="http://craftzine.com/">craftzine.com</a></li>
+			<li><a href="http://igniteshow.com/">igniteshow.com</a></li>
+			<li><a href="https://developer.paypal.com/">PayPal Developer Zone</a></li>
+			<li><a href="http://blogs.forbes.com/oreillymedia/">O'Reilly Insights on Forbes.com</a></li>
+		</ul>
+	</td>
+	</tr>
+	</tbody>
+	</table>
+
+</div>
+
+	<div style="clear: both;">&nbsp;</div>
+	</div>
+	<script language="JavaScript">
+		cssdropdown.startchrome("chromemenu");
+	</script>
+	
+<div id="jquery-overlay" style="background-color: rgb(0, 0, 0); opacity: 0.8; width: 1903px; height: 1146px;"></div><div id="jquery-lightbox" style="top: 90.1px; left: 0px;"><div id="lightbox-container-image-box" style="width: 520px; height: 676px;"><div id="lightbox-container-image"><img id="lightbox-image" style="display: inline;" src="./《代码不朽：编写可维护软件的10大要则（Java版）》——O&#39;Reilly 北京_files/build_maintainable_sw_java-ptp_cvr_l.gif"><div style="display: block;" id="lightbox-nav"><a href="http://www.oreilly.com.cn/index.php?func=book&amp;isbn=978-7-121-29704-5#" id="lightbox-nav-btnPrev" style="display: none; height: 676px; background: url(&quot;images/lightbox-blank.gif&quot;) no-repeat transparent;"></a><a href="http://www.oreilly.com.cn/index.php?func=book&amp;isbn=978-7-121-29704-5#" id="lightbox-nav-btnNext" style="display: none; height: 676px; background: url(&quot;images/lightbox-blank.gif&quot;) no-repeat transparent;"></a></div><div id="lightbox-loading" style="display: none;"><a href="http://www.oreilly.com.cn/index.php?func=book&amp;isbn=978-7-121-29704-5#" id="lightbox-loading-link"><img src="./《代码不朽：编写可维护软件的10大要则（Java版）》——O&#39;Reilly 北京_files/lightbox-ico-loading.gif"></a></div></div></div><div id="lightbox-container-image-data-box" style="display: block; width: 500px;"><div id="lightbox-container-image-data"><div id="lightbox-image-details"><span id="lightbox-image-details-caption" style="display: none;"></span><span id="lightbox-image-details-currentNumber" style="display: none;"></span></div><div id="lightbox-secNav"><a href="http://www.oreilly.com.cn/index.php?func=book&amp;isbn=978-7-121-29704-5#" id="lightbox-secNav-btnClose"><img src="./《代码不朽：编写可维护软件的10大要则（Java版）》——O&#39;Reilly 北京_files/lightbox-btn-close.gif"></a></div></div></div></div></body><div></div></html>
