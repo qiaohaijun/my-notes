@@ -1,1 +1,2 @@
-google的平台
+- google的平台
+- david blei
