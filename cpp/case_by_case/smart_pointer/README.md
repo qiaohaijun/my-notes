@@ -1,0 +1,3 @@
+- enable_shared_from_this
+- shared_pointer
+- weak_pointer
