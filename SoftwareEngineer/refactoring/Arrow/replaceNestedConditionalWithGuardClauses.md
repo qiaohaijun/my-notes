@@ -27,5 +27,10 @@ double getPayAmount() {
   return normalPayAmount();
 };  
 ```
+
+---
+ 
+这个例子很不合理, 为什么要在一个`getPayAmount()`函数里进行这种角色的判断.
+
 ### link
 - https://refactoring.com/catalog/replaceNestedConditionalWithGuardClauses.html
