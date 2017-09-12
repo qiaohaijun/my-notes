@@ -1,0 +1,3 @@
+```cxx
+#pragma once
+```
