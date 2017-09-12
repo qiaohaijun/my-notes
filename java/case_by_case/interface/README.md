@@ -1,0 +1,1 @@
+interface就是interface
