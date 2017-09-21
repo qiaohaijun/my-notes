@@ -1,0 +1,4 @@
+- Git at Google: Making Big Project (and Everyone else) Happy [Dave Borowitz - Git Merge 2015]
+- How We Made GitHub Fast(2009)
+- Introducing DGit 2016
+- Building resilience in Spokes (2016)
