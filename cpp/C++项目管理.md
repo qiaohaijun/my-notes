@@ -48,6 +48,9 @@ c/header.h
 // some code 
 ```
 
+如果 MyClass.cpp 依赖了两个第三方库a和b
+
+
 ### link
 - 该文章来自于阿里巴巴技术协会（ATA）精选文章
 - https://toutiao.io/posts/155258/app_preview
