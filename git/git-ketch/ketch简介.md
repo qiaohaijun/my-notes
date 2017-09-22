@@ -1,0 +1,13 @@
+Google Kick-Starts Git Ketch: A Fault-Tolerant Git Management System
+
+Although development has only started, Google has announced their first commits of Git Ketch, a multi-master Git management system that replicates information across multiple Git servers for resilience and scalability. The changes are based on JGit, a Java-based Git server, although other Git servers may be part of the multi-master cluster.
+
+Git is designed to be a distributed source control repository system, however, most organisations will use a somewhat centralised approach: there will be a master repository with the "golden copy" of the code, and all developers will push their changes to it and pull updates from it; although changes can be applied from a developer's repository directly to another one's, this rarely happens. This centralised approach introduces a single point of failure.
+
+JGit provides a partial solution to this through its Distributed File System (DFS) storage option. This option is only partial because JGit only defines a set of abstract classes that define the contract of DFS storage, but the user has to design the overall architecture that supports the replication of data and create an implementation for such abstract classes. This means that organisations have to invest considerable resources into implementing JGit DFS, which has deterred wider adoption (Google is one of the few organisations to have a known implementation).
+
+Ketch follows a different strategy. Instead of defining a single Git server that can replicate data across a DFS, Ketch assumes the existence of multiple, ordinary Git servers that are synchronised with each other; hence the term "multi-master". At any given point, one of those servers will act as leader, while the other ones will be slaves. Whenever a push request is sent to any server, the request is forwarded to the leader; the leader will then send push requests to all other servers, and will only confirm a successful operation to the initial caller once a majority of slave servers have confirmed a successful push request. This mechanism, based on the Raft algorithm, ensures that at least the majority of servers will contain the requested changes; any servers missing data can then be synchronised with the others. At the moment, only JGit servers can act as leaders, although any Git server that implements atomic push can act as a participating server in the multi-master cluster.
+
+The proposed changes can be found in JGit's Gerrit, and further details on the tool and its progress can be obtained from JGit's email distribution list.
+### link
+- https://www.infoq.com/news/2016/02/google-kick-starts-git-ketch
