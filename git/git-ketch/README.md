@@ -60,7 +60,7 @@ mast on the front of the ship.
 
 Footnotes
 ---------
-[1] https://git.eclipse.org/r/64206
-[2] https://raft.github.io/
-[3] https://www.google.com/search?q=ketch&tbm=isch
-[4] https://www.google.com/search?q=raft&tbm=isch
+- [1] https://git.eclipse.org/r/64206
+- [2] https://raft.github.io/
+- [3] https://www.google.com/search?q=ketch&tbm=isch
+- [4] https://www.google.com/search?q=raft&tbm=isch
