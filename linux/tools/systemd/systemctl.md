@@ -6,7 +6,7 @@ sudo systemctl reboot
 #### 关闭系统, 切断电源
 ```bash
 sudo systemctl poweroff
-``
+```
 
 #### CPU停止工作
 ```bash
@@ -14,10 +14,10 @@ sudo systemctl halt
 ```
 
 ### 暂停系统
+
 ```bash
 sudo systemctl suspend
 ```
-
 
 #### 让系统进入冬眠状态
 ```bash
