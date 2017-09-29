@@ -7,3 +7,7 @@ provide Copr with src.rpm packages available online
 let Copr do all the work and wait for your new repo
 
 NOTE: Copr is not yet officially supported by Fedora Infrastructure.
+
+
+### github 地址
+- https://github.com/fedora-copr/copr
