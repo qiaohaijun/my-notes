@@ -14,3 +14,7 @@ tensorflow发布的系统主要支持的是ubuntu.
 
 ### 解决思路
 - 源码编译curl
+
+
+### link
+- https://github.com/tensorflow/serving/issues/320
