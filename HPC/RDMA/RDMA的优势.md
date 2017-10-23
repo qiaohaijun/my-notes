@@ -1,0 +1,6 @@
+- Zero-copy: Send and receive data to and from remote buffers
+- Kernel bypass: improving latency and throughput
+- Low CPU involvement: Access remote server’s memory without consuming CPU cycles on the remote server
+- Convergence: Single fabric to support Storage and Compute
+- Close to wire speed performance on Lossy Fabrics
+- Available in InfiniBand and Ethernet (L2 and L3)
