@@ -1,0 +1,2 @@
+- 使用 static_cast 代替 c stype 的显式转化.
+- 使用 // 来做注释
