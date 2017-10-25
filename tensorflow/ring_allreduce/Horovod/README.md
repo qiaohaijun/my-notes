@@ -1,0 +1,1 @@
+uber开源的基于ring allreduce通信方案的多机模型.
