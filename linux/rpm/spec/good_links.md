@@ -1,0 +1,1 @@
+- https://zh.opensuse.org/openSUSE:RPM_conditional_builds
