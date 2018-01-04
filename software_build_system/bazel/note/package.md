@@ -1,4 +1,4 @@
-```bazel
+```python
 package(
     default_visibility = [
         "//tensorflow_serving:internal",
