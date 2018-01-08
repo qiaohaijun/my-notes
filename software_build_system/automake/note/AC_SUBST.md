@@ -16,3 +16,10 @@ AC_SUBST([FOO],[foo])
 FOO=foo
 AC_SUBST([FOO])
 ```
+
+
+---
+
+### PS
+
+简而言之, 这个就是定义变量.
