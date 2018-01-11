@@ -1,0 +1,1 @@
+error code vs exception
