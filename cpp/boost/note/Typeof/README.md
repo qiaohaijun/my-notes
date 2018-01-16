@@ -1,0 +1,2 @@
+Typeof operator emulation.
+
