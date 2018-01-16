@@ -1,0 +1,2 @@
+Smart pointer class templates.
+
