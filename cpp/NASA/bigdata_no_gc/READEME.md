@@ -1,0 +1,1 @@
+这个note目录,讨论关于bigdata生态环境no_gc问题.
