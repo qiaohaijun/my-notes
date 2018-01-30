@@ -1,0 +1,1 @@
+rename => strong enum
