@@ -1,7 +1,7 @@
 ```c#
 public void PrintOwing(double amount)
 {
-	PrintBanner();
+PrintBanner();
 	// print details
 	Console.WriteLine("name:" + _name);
 	Console.WriteLine("amount:" + _amount);
