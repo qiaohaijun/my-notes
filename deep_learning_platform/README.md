@@ -1,0 +1,5 @@
+- tensorflow
+- paddlepaddle
+- caffe
+- caffe2
+- mxnet
