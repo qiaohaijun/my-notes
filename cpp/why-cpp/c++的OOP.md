@@ -5,7 +5,7 @@
 - interface
 - abstract
 - implement
-- extend
+- extends
 
 c++中只有继承的方式
 
@@ -23,6 +23,9 @@ c++其实可以通过class的命名手法上来模拟这些思想
 
 
 ----
+
+
+### 向 java和 cshape 学习 OOP 的手法
 
 
 
