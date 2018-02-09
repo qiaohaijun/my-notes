@@ -1,0 +1,15 @@
+1. is_const
+2. is_volatile
+3. is_trivial
+4. is_trivially_copyable
+5. is_standard_layout
+6. is_pod
+7. is_literal_type
+8. has_unique_object_representations
+9. is_empty
+10. is_polymorphic
+11. is_abstract
+12. is_final
+13. is_aggregate
+14. is_signed
+15. is_unsigned
