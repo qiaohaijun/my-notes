@@ -1,0 +1,14 @@
+1. is_void
+2. is_null_pointer
+3. is_integral
+4. is_floating_point
+5. is_array
+6. is_enum
+7. is_union
+8. is_class
+9. is_function
+10. is_pointer
+11. is_lvalue_reference
+12. is_rvalue_reference
+13. is_member_object_pointer
+14. is_member_function_pointer
