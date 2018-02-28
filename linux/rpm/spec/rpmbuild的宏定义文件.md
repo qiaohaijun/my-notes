@@ -14,3 +14,8 @@
 ```
 %_topdir    $HOME/myrpmbuildenv
 ```
+
+
+### rpmdev-setuptree
+
+执行 rpmdev-setuptree 会在当前用户家目录下的rpmbuild目录(如果该目录不存在也会被自动创建)里自动建立上述目录。 
