@@ -4,6 +4,8 @@
 
 ### Summary
 
+---
+
 ### Name
 
 ### Version
@@ -15,7 +17,6 @@
 ### Copyright
 
 ### Group
-
 
 ### Source
 
@@ -39,3 +40,21 @@
 1. Patch1
 2. Patch0
 3. ... ...
+
+
+---
+
+
+### Packager
+打包者的邮箱地址
+
+---
+
+### Provides
+
+
+### Requires
+
+
+
+### %description
