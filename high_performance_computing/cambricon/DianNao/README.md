@@ -1,5 +1,5 @@
-DianNao
-
+DianNao at 2014
+ 
 T. Chen, Z. Du, N. Sun, J. Wang, and C. Wu. DianNao: a small-footprint high-throughput accelerator for ubiquitous machine learning. Proceedings of the 19th International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS), Salt Lake City, UT, USA, 2014, pp. 269–284.
 
 作者：杨军
