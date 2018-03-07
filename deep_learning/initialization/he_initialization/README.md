@@ -1,1 +1,1 @@
-he 大神
+He initialization是由Kaiming He et al.在2015年提出
