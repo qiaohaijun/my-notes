@@ -10,7 +10,7 @@
 ---
 
 #### 数值类型的约定
-1. STensor `float`
-2. DTensor `double`
-3. ITensor  `int`
-4. LTensor  `long`
+1. STensor `float` 类型 tensor
+2. DTensor `double` 类型 tensor
+3. ITensor  `int` 类型 tensor
+4. LTensor  `long` 类型 tensor
