@@ -1,14 +1,20 @@
+### 代码注释
+```
 // The StreamExecutor is a single-device abstraction for:
 //
 // * Loading/launching data-parallel-kernels
 // * Invoking pre-canned high-performance library routines (like matrix
 //   multiply)
 
+```
+
 
 这个streamExecutor 是一个单设备(单块gpu卡)的抽象, 具体工作
 1. loading/lauching 数据并行的kernel
 2. 调用提前打包好的高性能的计算库. (cublas)
 
+
+### 包含的头文件
 
 ```c++
 
