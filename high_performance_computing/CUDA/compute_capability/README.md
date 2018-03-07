@@ -2,7 +2,7 @@ Compute Capability
 
 
 GPU |	Compute Capability
---- | ---
+:---: | :---:
 Tesla V100 | 7.0
 Tesla P100 |	6.0
 Tesla P40	 | 6.1
