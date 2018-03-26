@@ -1,0 +1,4 @@
+- keepalived
+- heartbeat
+- corosync
+- pacemarker
