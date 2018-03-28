@@ -1,0 +1,2 @@
+- ceph的paxos可靠性.
+- ceph的paxos代码质量.
