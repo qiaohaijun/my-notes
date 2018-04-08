@@ -1,0 +1,1 @@
+leveldb中的hash用的就是这个算法.
