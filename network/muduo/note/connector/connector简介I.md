@@ -1,0 +1,1 @@
+Connector可以说是muduo库的连接器，负责客户端向服务器发起连接。实际上说白了就是封装了socket的connect操作。
