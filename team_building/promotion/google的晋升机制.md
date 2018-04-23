@@ -36,3 +36,17 @@ level5 可以根据上级定的要求, 很好的完成任
 3. point person, 可以代表team和别的team协调工作.
 
 #### level 6
+staff engineer.
+
+1. 要么带整个一个team, 要么更大的范围
+2. 一定要drive或者带着一群人去发展, 找到下一步的发展方向, 而不是follow.
+3. 需要有 data driven desicion marking
+4. 即使没有数据, 也要有足够好的判断.
+
+
+### level 7
+
+界限不那么清晰, 管多个team,协调多个team的工作. 保证一个特别复杂系统的成功过. level7-10主要看经验.
+
+
+
