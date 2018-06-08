@@ -1,0 +1,1 @@
+effective x系列.
