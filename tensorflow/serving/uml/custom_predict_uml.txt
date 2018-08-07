@@ -1,0 +1,31 @@
+custom_client->tfs_wrapper:predict(map<string,TFSCPUTensor> tfs_input )
+
+loop Predict
+
+tfs_wrapper->tfs_wrapper:PreProcessPrediction()
+activate tfs_wrapper
+deactivate tfs_wrapper
+
+
+tfs_wrapper->Session: Run()
+activate Session
+activate tfs_wrapper
+Session-->tfs_wrapper:Run()
+deactivate  Session
+deactivate tfs_wrapper
+
+
+
+tfs_wrapper->tfs_wrapper:PostProcessPrediction()
+activate tfs_wrapper
+deactivate  tfs_wrapper
+
+end
+
+tfs_wrapper-->custom_client:predict(map<string,TFSCPUTensor> tfs_output )
+
+
+note over tfs_wrapper:
+map<string, TFSCPUTensor> tfs_input
+map<string, TFSCPUTensor> tfs_output
+end note
