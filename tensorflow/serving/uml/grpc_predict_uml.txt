@@ -3,7 +3,7 @@ activate GrpcClient
 
 PredictionServiceImp->+TensorflowPredictor: predict( const PredictRequest& )
 
-TensorflowPredictor->PredictUitl:predict(const PredictRequest& )
+TensorflowPredictor->PredictUtil:predict(const PredictRequest& )
 
 loop RunPredict
 
