@@ -1,0 +1,49 @@
+GrpcClient->+PredictionServiceImp:predict( const PredictRequest& )
+activate GrpcClient
+
+PredictionServiceImp->+TensorflowPredictor: predict( const PredictRequest& )
+
+TensorflowPredictor->PredictUitl:predict(const PredictRequest& )
+
+loop RunPredict
+
+PredictUtil->PredictUtil:PreProcessPrediction()
+activate PredictUtil
+deactivate PredictUtil
+
+
+PredictUtil->Session: Run()
+activate Session
+activate PredictUtil
+Session-->PredictUtil:Run()
+deactivate  Session
+deactivate PredictUtil
+
+
+
+PredictUtil->PredictUtil:PostProcessPrediction()
+activate PredictUtil
+deactivate  PredictUtil
+
+end
+
+PredictUitl-->TensorflowPredictor:predict(PredictResponse* response)
+
+TensorflowPredictor-->-PredictionServiceImp: predict(PredictResponse* response)
+PredictionServiceImp-->-GrpcClient:predict(PredictResponse* response)
+
+
+deactivate GrpcClient
+
+
+
+note over  GrpcClient:
+dataType:
+map<string, TensorProto> predictRequest
+map<string, TensorProto> predictResponse
+end note
+
+note over PredictUtil:
+map<string, Tensor> predictRequest
+map<string, Tensor> predictResponse
+end note
