@@ -27,7 +27,7 @@ deactivate  PredictUtil
 
 end
 
-PredictUitl-->TensorflowPredictor:predict(PredictResponse* response)
+PredictUtil-->TensorflowPredictor:predict(PredictResponse* response)
 
 TensorflowPredictor-->-PredictionServiceImp: predict(PredictResponse* response)
 PredictionServiceImp-->-GrpcClient:predict(PredictResponse* response)
