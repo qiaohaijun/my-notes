@@ -1,4 +1,4 @@
-custom_client->tfs_wrapper:predict(map<string,TFSCPUTensor> tfs_input )
+custom_predictor->tfs_wrapper:predict(map<string,TFSCPUTensor> tfs_input )
 
 loop Predict
 
@@ -22,7 +22,7 @@ deactivate  tfs_wrapper
 
 end
 
-tfs_wrapper-->custom_client:predict(map<string,TFSCPUTensor> tfs_output )
+tfs_wrapper-->custom_predictor:predict(map<string,TFSCPUTensor> tfs_output )
 
 
 note over tfs_wrapper:
