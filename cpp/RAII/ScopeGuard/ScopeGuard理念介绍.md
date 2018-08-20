@@ -125,7 +125,16 @@ defer {
     drawer.endDraw();
 }
 ```
-
+```
+static void test_cpp()
+{
+    void* p = malloc(1000);
+    ON_SCOPE_EXIT
+    {
+        free(p);
+    };
+}
+```
 ---
 
 https://zhuanlan.zhihu.com/p/21303431
