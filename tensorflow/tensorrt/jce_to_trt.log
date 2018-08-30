@@ -1,0 +1,27 @@
+2018-08-30 20:43:12.501827: I tensorflow/core/grappler/devices.cc:51] Number of eligible GPUs (core count >= 8): 1
+2018-08-30 20:43:16.393490: I tensorflow/contrib/tensorrt/convert/convert_graph.cc:383] MULTIPLE tensorrt candidate conversion: 18
+2018-08-30 20:43:16.676650: W tensorflow/contrib/tensorrt/convert/convert_nodes.cc:2560] Type conversion failed for url_lookup/embedding_lookup/Shape
+2018-08-30 20:43:16.676717: W tensorflow/contrib/tensorrt/convert/convert_graph.cc:418] subgraph conversion error for subgraph_index:0 due to: "Invalid argument: Unsupported data type int32" SKIPPING......( 3 nodes)
+2018-08-30 20:43:16.682202: W tensorflow/contrib/tensorrt/convert/convert_graph.cc:418] subgraph conversion error for subgraph_index:1 due to: "Unimplemented: Require 4 dimensional input. Got 3 TitleLSTM/mul" SKIPPING......( 6 nodes)
+2018-08-30 20:43:16.687650: W tensorflow/contrib/tensorrt/convert/convert_graph.cc:418] subgraph conversion error for subgraph_index:2 due to: "Unimplemented: Require 4 dimensional input. Got 2 QueryConv/text_enc2/MatMul" SKIPPING......( 8 nodes)
+2018-08-30 20:43:16.693052: W tensorflow/contrib/tensorrt/convert/convert_graph.cc:418] subgraph conversion error for subgraph_index:3 due to: "Unimplemented: Require 4 dimensional input. Got 2 TitleConv/text_enc/MatMul" SKIPPING......( 3 nodes)
+2018-08-30 20:43:16.698553: W tensorflow/contrib/tensorrt/convert/convert_graph.cc:418] subgraph conversion error for subgraph_index:4 due to: "Unimplemented: Require 4 dimensional input. Got 2 QueryConv/text_enc/MatMul" SKIPPING......( 3 nodes)
+2018-08-30 20:43:16.703991: W tensorflow/contrib/tensorrt/convert/convert_graph.cc:418] subgraph conversion error for subgraph_index:5 due to: "Unimplemented: Require 4 dimensional input. Got 2 QueryConv/text_enc1/MatMul" SKIPPING......( 3 nodes)
+2018-08-30 20:43:16.709408: W tensorflow/contrib/tensorrt/convert/convert_graph.cc:418] subgraph conversion error for subgraph_index:6 due to: "Unimplemented: Require 4 dimensional input. Got 3 Reshape_6" SKIPPING......( 6 nodes)
+2018-08-30 20:43:16.714988: W tensorflow/contrib/tensorrt/convert/convert_graph.cc:418] subgraph conversion error for subgraph_index:7 due to: "Unimplemented: Require 4 dimensional input. Got 3 TitleConv/Conv/conv1d/Squeeze" SKIPPING......( 6 nodes)
+2018-08-30 20:43:16.720405: W tensorflow/contrib/tensorrt/convert/convert_graph.cc:418] subgraph conversion error for subgraph_index:8 due to: "Unimplemented: Require 4 dimensional input. Got 3 QueryMergeSim/Reshape_1" SKIPPING......( 3 nodes)
+2018-08-30 20:43:16.725848: W tensorflow/contrib/tensorrt/convert/convert_graph.cc:418] subgraph conversion error for subgraph_index:9 due to: "Unimplemented: Require 4 dimensional input. Got 3 QueryConv/Conv/conv1d/Squeeze" SKIPPING......( 6 nodes)
+2018-08-30 20:43:16.731255: W tensorflow/contrib/tensorrt/convert/convert_nodes.cc:2560] Type conversion failed for anchor_lookup/embedding_lookup/Reshape
+2018-08-30 20:43:16.731273: W tensorflow/contrib/tensorrt/convert/convert_graph.cc:418] subgraph conversion error for subgraph_index:10 due to: "Invalid argument: Unsupported data type int32" SKIPPING......( 3 nodes)
+2018-08-30 20:43:16.736751: W tensorflow/contrib/tensorrt/convert/convert_graph.cc:418] subgraph conversion error for subgraph_index:11 due to: "Unimplemented: Require 4 dimensional input. Got 3 TitleMergeSim/Reshape_1" SKIPPING......( 3 nodes)
+2018-08-30 20:43:16.742472: W tensorflow/contrib/tensorrt/convert/convert_graph.cc:418] subgraph conversion error for subgraph_index:12 due to: "Unimplemented: Require 4 dimensional input. Got 2 TitleConv/text_enc1/MatMul" SKIPPING......( 3 nodes)
+2018-08-30 20:43:16.747899: W tensorflow/contrib/tensorrt/convert/convert_nodes.cc:2560] Type conversion failed for title_lookup/embedding_lookup/Reshape
+2018-08-30 20:43:16.747917: W tensorflow/contrib/tensorrt/convert/convert_graph.cc:418] subgraph conversion error for subgraph_index:13 due to: "Invalid argument: Unsupported data type int32" SKIPPING......( 3 nodes)
+2018-08-30 20:43:16.753351: W tensorflow/contrib/tensorrt/convert/convert_nodes.cc:2560] Type conversion failed for query_lookup/embedding_lookup/Shape
+2018-08-30 20:43:16.753369: W tensorflow/contrib/tensorrt/convert/convert_graph.cc:418] subgraph conversion error for subgraph_index:14 due to: "Invalid argument: Unsupported data type int32" SKIPPING......( 3 nodes)
+2018-08-30 20:43:16.758886: W tensorflow/contrib/tensorrt/convert/convert_nodes.cc:2560] Type conversion failed for query_lookup/embedding_lookup/Reshape
+2018-08-30 20:43:16.758904: W tensorflow/contrib/tensorrt/convert/convert_graph.cc:418] subgraph conversion error for subgraph_index:15 due to: "Invalid argument: Unsupported data type int32" SKIPPING......( 3 nodes)
+2018-08-30 20:43:16.764337: W tensorflow/contrib/tensorrt/convert/convert_nodes.cc:2560] Type conversion failed for anchor_lookup/embedding_lookup/Shape
+2018-08-30 20:43:16.764355: W tensorflow/contrib/tensorrt/convert/convert_graph.cc:418] subgraph conversion error for subgraph_index:16 due to: "Invalid argument: Unsupported data type int32" SKIPPING......( 3 nodes)
+2018-08-30 20:43:16.769733: W tensorflow/contrib/tensorrt/convert/convert_nodes.cc:2560] Type conversion failed for title_lookup/embedding_lookup/Shape
+2018-08-30 20:43:16.769750: W tensorflow/contrib/tensorrt/convert/convert_graph.cc:418] subgraph conversion error for subgraph_index:17 due to: "Invalid argument: Unsupported data type int32" SKIPPING......( 3 nodes)
