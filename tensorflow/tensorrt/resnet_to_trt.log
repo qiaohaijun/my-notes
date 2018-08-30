@@ -1,0 +1,11 @@
+[@nmyjs_176_98 tensorrt-framework]# python resnet_to_trt.py 
+2018-08-30 20:50:19.820232: I tensorflow/core/grappler/devices.cc:51] Number of eligible GPUs (core count >= 8): 1
+2018-08-30 20:50:20.796160: I tensorflow/contrib/tensorrt/convert/convert_graph.cc:383] MULTIPLE tensorrt candidate conversion: 2
+2018-08-30 20:50:21.519499: I tensorflow/contrib/tensorrt/convert/convert_nodes.cc:2660] Max batch size= 1 max workspace size= 33335598
+2018-08-30 20:50:21.519551: I tensorflow/contrib/tensorrt/convert/convert_nodes.cc:2666] starting build engine
+2018-08-30 20:50:32.867323: I tensorflow/contrib/tensorrt/convert/convert_nodes.cc:2671] Built network
+2018-08-30 20:50:34.129791: I tensorflow/contrib/tensorrt/convert/convert_nodes.cc:2676] Serialized engine
+2018-08-30 20:50:34.204394: I tensorflow/contrib/tensorrt/convert/convert_nodes.cc:2684] finished engine resnet_model/my_trt_op0 containing 457 nodes
+2018-08-30 20:50:34.204594: I tensorflow/contrib/tensorrt/convert/convert_nodes.cc:2704] Finished op preparation
+2018-08-30 20:50:34.523013: I tensorflow/contrib/tensorrt/convert/convert_nodes.cc:2712] OK finished op building
+2018-08-30 20:50:34.615303: W tensorflow/contrib/tensorrt/convert/convert_graph.cc:418] subgraph conversion error for subgraph_index:1 due to: "Unimplemented: Require 4 dimensional input. Got 2 resnet_model/dense/MatMul" SKIPPING......( 3 nodes)
