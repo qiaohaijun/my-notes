@@ -1,6 +1,29 @@
 1. GraphDef 是序列化的graph, 是可以save和restore的文件.
 2. graph 是一个动态的, 可以执行的DAG.
 
+
+---
+### GraphDef
+GraphDef类是protobuf中定义的graph结构, 可以将graph结构序列化和反序列化处理,
+1. 模型保存
+2. 模型加载
+3. 分布式数据传输
+
+
+### Graph
+Graph是core/graph模块定义的graph结构, 完成graph相关的操作
+1. 构建 construction
+2. 剪枝 pruning
+3. 划分 partitioning
+4. 优化 optimize
+5. 运行 execute
+
+Graph和GraphDef可以互相转换
+1. Graph::ToGraphDef
+2. ConvertGraphDefToGraph
+
+
+
 ```python
 import tensorflow as tf
 from tensorflow.python.platform import gfile
