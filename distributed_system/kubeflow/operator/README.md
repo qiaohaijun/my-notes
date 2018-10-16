@@ -1,0 +1,3 @@
+- tf-operator
+- mxnet-operator
+- caffe2-operator
