@@ -1,3 +1,5 @@
 - tf-operator
 - mxnet-operator
 - caffe2-operator
+- mpi-operator
+- pytorch-operator
