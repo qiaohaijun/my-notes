@@ -1,12 +1,12 @@
 ## 系统要求
 ### python 3.4
 
-在centos7上需要使用
+### 在centos7上需要使用
 ```
 yum install -y rh-python34-python-pip
 ```
 
-安装**devpi**
+### 
 ```
 pip3.4 install -U devpi
 pip3.4 install -U devpi-server
