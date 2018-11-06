@@ -1,0 +1,1 @@
+queue充当异步化的任务的buffur.
