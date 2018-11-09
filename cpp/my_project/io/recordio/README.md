@@ -1,0 +1,1 @@
+paddlepaddle的recordio是一个不错设计模式.
