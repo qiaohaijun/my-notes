@@ -1,0 +1,1 @@
+serving_lib其实是对tf_serving中的predictor的封装.
