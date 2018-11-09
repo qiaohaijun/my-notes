@@ -1,3 +1,6 @@
+```c++
+#include <pipe_task.h> // 具体的任务
+```
 
 ### 重要方法
 1. setNextPipe()
