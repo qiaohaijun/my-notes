@@ -1,5 +1,5 @@
 ### 重要数据结构
-std::vector<PipelineInterface*> pipeline_interface;
+std::vector<PipeInterface*> pipe_vec_;
 
 
 ###
