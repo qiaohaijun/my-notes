@@ -10,7 +10,7 @@
 
 这个queue是对std::queue的封装
 
-```c++
+```cpp
 QueueWithMutex<PipeTask*>  work_queue;
 ```
 
