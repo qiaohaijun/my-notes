@@ -5,4 +5,8 @@
 ### 重要方法
 1. setNextPipe()
 2. doProcess()
-3. 
+3. init()
+
+
+#### init
+1. 初始化thread
