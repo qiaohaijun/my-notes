@@ -25,3 +25,7 @@ class PipeTask {
     abseil::string_view output_json;
 }
 ```
+
+### 携带统计信息
+1. 
+2. 
