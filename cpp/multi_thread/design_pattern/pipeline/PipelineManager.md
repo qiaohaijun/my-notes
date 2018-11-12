@@ -6,5 +6,7 @@ PipelineManager::NewPipeTask();
 ### 重要数据结构
 ```
 std::vector<PipeInterface*> pipe_vec_;
+// pipe_name
+std::map<string, PipeInterface*> pipe_map;
 ```
 
