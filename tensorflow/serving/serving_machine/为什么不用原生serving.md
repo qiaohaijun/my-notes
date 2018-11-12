@@ -9,3 +9,4 @@
 
 #### 需要原生支持tf custom ops
 这个需要对于代码进行修改, 这样可以tf session启动的时候可以使用tf custom ops.
+通过支持公司内部的 qrnn 的tf ops, 对于速度的提升很明显.
