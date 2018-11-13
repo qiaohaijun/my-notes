@@ -1,4 +1,5 @@
 ### libc
+libc 是linux系统调用上的api.
 
 ### glibc
 `glibc`中的`g`是`gnu`的意思
@@ -23,6 +24,7 @@ The history of Unix and various standards determine much of the interface of the
 In general the GNU C Library supports the ISO C and POSIX standards. 
 We also try to support the features of popular Unix variants (including BSD and System V) when those do not conflict with the standards. 
 Different compatibility modes (selectable when you compile an application) allow the peaceful coexistence of compatibility support for different varieties of Unix. 
+
 ---
 
 libc, glibc在一个层次，都是C的标准实现库，是操作系统级别的基石之一。
