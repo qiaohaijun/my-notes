@@ -1,0 +1,5 @@
+Fujitsu
+
+1. K computer
+2. PRIMEHPC FX10
+3. PRIMEHPC FX100
