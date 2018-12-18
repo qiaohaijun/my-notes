@@ -1,0 +1,3 @@
+Each SuperNode network on a chip (NoC) is implemented as a 4 by 2 mesh topology for a total of 8 CPU Clusters. Each cluster consist of a router, a directory control unit (DCU), 4 CPU cores and a shared cache. Attached to each SuperNode are two DDR4 memory controllers at opposite ends. With 4 cores per node and 8 nodes per SuperNode, there are a total of 32 cores per SN. Compliance to cache coherence is done by the core.
+
+Routing is done via the router at every one of the clusters. The router has four communication channels: Response, Request, Snoop, and Acknowledgement. Each channel is 128-bit wide.
