@@ -1,0 +1,2 @@
+Four SuperNodes make up the chip. Each SN features three Fast Interconnect Transport (FIT) links. FITs are a point-to-point interconnect with a bidirectional bandwidth of 25.6 GB/s per link and a reported round-trip delay of roughly 20 ns. Each FIT includes a cyclic redundancy check (CRC) and retry mechanism to ensure correct transmission. Each port is used to connect to each of the other SNs. The Matrix-2000 supports DMA mode in order to improve the FIT link bandwidth utilization with a reported utilization of 93.8% reported in said mode.
+
