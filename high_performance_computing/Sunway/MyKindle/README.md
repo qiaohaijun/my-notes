@@ -1,0 +1,1 @@
+paper and ebook
