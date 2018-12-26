@@ -1,1 +1,4 @@
 facebook的thrift是一个标准的使用yacc和flex开发的编译器.
+
+
+可以作为学习yacc和flex的例子.
