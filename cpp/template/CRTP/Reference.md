@@ -4,3 +4,4 @@
 - http://www.drdobbs.com/cpp/counting-objects-in-c/184403484?pgno=1
 - http://www.drdobbs.com/cpp/counting-objects-in-c/184403484?pgno=2
 - http://www.drdobbs.com/cpp/counting-objects-in-c/184403484?pgno=3
+- https://xr1s.me/2018/05/10/brief-introduction-to-crtp/
