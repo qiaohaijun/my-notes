@@ -1,1 +1,6 @@
-http://blog.guorongfei.com/2017/01/25/enbale-shared-from-this-implementaion/
+- http://blog.guorongfei.com/2017/01/25/enbale-shared-from-this-implementaion/
+- https://www.zhihu.com/question/27972624
+- http://zuyunfei.com/2013/05/07/c-plus-plus-idioms-crtp/
+- http://www.drdobbs.com/cpp/counting-objects-in-c/184403484?pgno=1
+- http://www.drdobbs.com/cpp/counting-objects-in-c/184403484?pgno=2
+- http://www.drdobbs.com/cpp/counting-objects-in-c/184403484?pgno=3
