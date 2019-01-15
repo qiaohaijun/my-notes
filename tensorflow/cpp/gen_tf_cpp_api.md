@@ -13,12 +13,15 @@ bazel build //tensorflow:libtensorflow_cc.so
 5. bazel-bin
 
 ### include lib64
+```
 mkdir /usr/local/include/tf
 cp -r bazel-genfiles/ /usr/local/include/tf/
 cp -r tensorflow/* /usr/local/include/tf/tensorflow/
 cp -r third_party /usr/local/include/tf/
 cp -r bazel-bin/tensorflow/*.so /usr/local/lib/
-
+```
 ### proto
+```
 cp -r bazel-genfiles/ /usr/local/include/tf/
 cp -r tensorflow/* /usr/local/include/tf/tensorflow/
+```
